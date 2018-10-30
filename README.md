@@ -28,10 +28,10 @@ Or use specific command:
 
 2. For test the middleware exercises
     ```shell
-    npm run test:routing
+    npm run test:middleware
     ```
 
 3. For test exercises the errors handling
     ```shell
-    npm run test:routing
+    npm run test:errors
     ```
