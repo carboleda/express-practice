@@ -6,8 +6,8 @@ const should = chai.should();
 const expect = chai.expect;
 const { server } = require('../../config/config.test.json');
 
-describe('Middlewares with express', function(){
-    it('Test that basic middleware its configured', function(done) {
+describe('Middlewares con express', function(){
+    it('Prueba que el middleware basico esté configurado', function(done) {
         chai.request(server)
             .get('/routing/basic/text')
             .end(function(err, res) {

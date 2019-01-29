@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "mocha --reporter spec test/**/*.test.js",
+    "test:single": "mocha --reporter spec test/**/*.test.js --grep ",
     "test:routing": "mocha --reporter spec test/1_routing/*.test.js",
     "test:middleware": "mocha --reporter spec test/2_middleware/*.test.js",
     "test:errors": "mocha --reporter spec test/3_errors/*.test.js"

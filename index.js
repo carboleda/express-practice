@@ -7,7 +7,8 @@ require('./2_middleware')(app)
 .then(() => {
     app.use(bodyParser.json());
     app.use('/routing', require('./1_routing'));
-    require('./1_routing/3_static')(app, express);
+    require('./1_routing/2_static')(app, express);
+
     return require('./3_errors')(app);
 })
 .then(() => {

@@ -1,14 +1,19 @@
 const Boom = require('boom');
 
-//Review about handle 404 and 500 responses http://expressjs.com/es/starter/faq.html
-//Review about Boom https://github.com/hapijs/boom
+//Revisa sobre como manejar respuestas 404 y 500 en http://expressjs.com/es/starter/faq.html
+//Revisa sobre Boom en https://github.com/hapijs/boom
 module.exports = function(app) {
-    //1.1. Create a middleware for handle the status 404 and responds using Boom.notFound
-    //and text 'Oops, the source requited not found in this server'
+    //NO MODIFICAR: Este es un error a proposito para probar el manejo de errores 500
+    app.get('/purpose/error', function basicText(req, res) {
+        throw new Error('On purpose error');
+    });
+
+    //1.1. Crea un middleware para manejar los estados 404 y responder usando Boom.notFound
+    //y un texto text 'Oops, el recurso solicitado no fue encontrado en este servidor'
 
 
-    //1.2. Create a middleware for handle 500 errors and responds using Boom.internal
-    //and text 'Something broke!'
+    //1.2. Crea un middleware para manejar errores 500 y responder usando Boom.internal
+    //y un texto 'Algo fallo!'
 
 
     return app;
