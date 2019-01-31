@@ -33,7 +33,7 @@ describe('Enrutamiento basico con express', function(){
             .get('/routing/basic/query?a=10&b=35')
             .end(function(err, res) {
                 expect(res).to.have.status(200);
-                assert(res.text == '45');
+                expect(res.text).equal('45');
                 done();
             })
     });

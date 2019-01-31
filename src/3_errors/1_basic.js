@@ -8,12 +8,15 @@ module.exports = function(app) {
         throw new Error('On purpose error');
     });
 
+
     //1.1. Crea un middleware para manejar los estados 404 y responder usando Boom.notFound
-    //y un texto text 'Oops, el recurso solicitado no fue encontrado en este servidor'
+    //y un texto 'Oops, el recurso solicitado no fue encontrado en este servidor'
+
 
 
     //1.2. Crea un middleware para manejar errores 500 y responder usando Boom.internal
-    //y un texto 'Algo fallo!'
+    //y un texto 'Algo salio mal!'
+
 
 
     return app;
