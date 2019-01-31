@@ -15,6 +15,12 @@ Practice of some [expressjs](https://expressjs.com/) features
 # How to use:
 Implement each case then execute next commands for test your work:
 
+Start server with:
+```shell
+npm run start:dev
+```
+---
+
 Execute all test with:
 ```shell
 npm run test
